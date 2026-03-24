@@ -1,5 +1,0 @@
-/Users/riushin/Downloads/diag-db-checker/build/CMakeFiles/checker.dir
-/Users/riushin/Downloads/diag-db-checker/build/CMakeFiles/edit_cache.dir
-/Users/riushin/Downloads/diag-db-checker/build/CMakeFiles/rebuild_cache.dir
-/Users/riushin/Downloads/diag-db-checker/build/_deps/json-build/CMakeFiles/edit_cache.dir
-/Users/riushin/Downloads/diag-db-checker/build/_deps/json-build/CMakeFiles/rebuild_cache.dir
