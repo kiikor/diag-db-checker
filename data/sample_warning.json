@@ -1,0 +1,12 @@
+[
+  {
+    "name": "ServiceWarning",
+    "service_id": 10,
+    "timeout_ms": 20
+  },
+  {
+    "name": "ServiceOK",
+    "service_id": 11,
+    "timeout_ms": 100
+  }
+]

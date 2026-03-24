@@ -12,12 +12,14 @@ int main(int argc, char* argv[]) {
     std::string output = (argc >= 3) ? argv[2] : "reports/report.json";
 
     auto services = load_config(input);
-    auto report = validate_services(services);
+    auto report = validate_services(services, input);
     save_report(report, output);
 
     std::cout << "Validation finished.\n";
     std::cout << "Valid: " << (report.valid ? "true" : "false") << "\n";
     std::cout << "Errors: " << report.error_count << "\n";
+    std::cout << "Warnings: " << report.warning_count << "\n";
+    std::cout << "Report: " << output << "\n";
 
     return report.valid ? 0 : 1;
 }
