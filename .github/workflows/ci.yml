@@ -33,10 +33,15 @@ jobs:
       - name: Pretty print report
         run: |
           echo "=== BAD CASE ==="
-          jq '.errors[] | "ERROR: [index=\(.index)] \(.field): \(.message)"' reports/report_bad.json || true
+          jq -r '.errors[] | "ERROR: [index=\(.index)] \(.field): \(.message)"' reports/report_bad.json
 
           echo "=== WARNING CASE ==="
-          jq '.warnings[] | "WARNING: [index=\(.index)] \(.field): \(.message)"' reports/report_warning.json || true
+          jq -r '.warnings[] | "WARNING: [index=\(.index)] \(.field): \(.message)"' reports/report_warning.json
+          
+      - name: Emit annotations
+        run: |
+          jq -r '.errors[] | "::error::[index=\(.index)] \(.field): \(.message)"' reports/report_bad.json || true
+          jq -r '.warnings[] | "::warning::[index=\(.index)] \(.field): \(.message)"' reports/report_warning.json || true
 
       - name: Upload report
         uses: actions/upload-artifact@v4
