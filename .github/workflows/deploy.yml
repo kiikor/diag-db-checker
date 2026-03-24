@@ -27,7 +27,7 @@ jobs:
 
       - name: Upload source to server
         run: |
-          scp -r CMakeLists.txt README.md include src tests data \
+          scp -r CMakeLists.txt include src tests data \
             ${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_HOST }}:/home/${{ secrets.DEPLOY_USER }}/diag-db-checker/
 
       - name: Build and test on server
