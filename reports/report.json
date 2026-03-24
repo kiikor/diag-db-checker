@@ -1,0 +1,21 @@
+{
+  "error_count": 3,
+  "errors": [
+    {
+      "field": "name",
+      "index": 0,
+      "message": "name is empty"
+    },
+    {
+      "field": "service_id",
+      "index": 1,
+      "message": "duplicate service_id"
+    },
+    {
+      "field": "timeout_ms",
+      "index": 1,
+      "message": "invalid timeout_ms"
+    }
+  ],
+  "valid": false
+}

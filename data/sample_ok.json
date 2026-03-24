@@ -1,0 +1,12 @@
+[
+  {
+    "name": "ServiceA",
+    "service_id": 1,
+    "timeout_ms": 100
+  },
+  {
+    "name": "ServiceB",
+    "service_id": 2,
+    "timeout_ms": 200
+  }
+]

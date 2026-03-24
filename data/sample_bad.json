@@ -1,0 +1,12 @@
+[
+  {
+    "name": "",
+    "service_id": 1,
+    "timeout_ms": 100
+  },
+  {
+    "name": "Duplicate",
+    "service_id": 1,
+    "timeout_ms": -1
+  }
+]
