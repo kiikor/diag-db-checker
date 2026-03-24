@@ -20,6 +20,9 @@ jobs:
       - name: Build
         run: cmake --build build
 
+      - name: Run unit tests
+        run: ctest --test-dir build --output-on-failure
+
       - name: Run valid
         run: ./build/checker data/sample_ok.json reports/report_ok.json
 
